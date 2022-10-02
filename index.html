@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<header>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Survey Form</title>
+</header>
+
+<body>
+  <div class="heading">
+    <h4>
+      Registration
+    </h4>
+  </div>
+  <form action="/" method="POST">
+    <div class="form-control">
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" required name="first_name"placeholder="Enter your name e.g John"/>
+    </div>
+    <div class="form-control">
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" required name="last_name"placeholder="Enter your name e.g Doe"/>
+    </div>
+    <div class="form-control">
+      <label for="age">Age(optional)</label>
+      <input type="number" id="age" />
+    </div>
+    <div class="form-control">
+      <label for="date">Date of Birth</label>
+      <input type="date" id="date" />
+    </div>
+    <div class="form-control">
+      <label>
+          Choose your gender
+      </label>
+
+      <!-- Input Type Radio Button -->
+      <label for="gender-1">
+          <input type="radio"
+                 id="gender-1"
+                 name="gender">Man</input>
+      </label>
+      <label for="gender-2">
+          <input type="radio"
+                 id="gender-2"
+                 name="gender">Woman</input>
+      </label>
+      <label for="gender-3">
+          <input type="radio"
+                 id="gender-3"
+                 name="gender">Other</input>
+      </label>
+    </div>
+    <div class="form-control">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="johndoe@adress.com"/>
+    </div>
+    
+    <div class="comments">
+      <textarea id="comments" placeholder="Let us know any comments, suggestions, etc... " rows="10" cols="40"></textarea>
+    </div>
+    
+   
+  </form>
+</body>
+<button type="submit" value="submit">
+  Submit
+</button>
+</body>
+</html>
